@@ -1,0 +1,87 @@
+import { Transaction, Investment } from './types';
+
+export const MOCK_TRANSACTIONS: Transaction[] = [
+  {
+    id: '1',
+    amount: 2500,
+    category: 'Salary',
+    description: 'Monthly Salary',
+    date: '2024-04-01',
+    type: 'income',
+  },
+  {
+    id: '2',
+    amount: 50,
+    category: 'Food',
+    description: 'Grocery Shopping',
+    date: '2024-04-02',
+    type: 'expense',
+  },
+  {
+    id: '3',
+    amount: 120,
+    category: 'Utilities',
+    description: 'Electricity Bill',
+    date: '2024-04-03',
+    type: 'expense',
+  },
+  {
+    id: '4',
+    amount: 30,
+    category: 'Transport',
+    description: 'Bus Pass',
+    date: '2024-04-04',
+    type: 'expense',
+  },
+  {
+    id: '5',
+    amount: 150,
+    category: 'Freelance',
+    description: 'Logo Design Project',
+    date: '2024-04-05',
+    type: 'income',
+  },
+];
+
+export const MOCK_INVESTMENTS: Investment[] = [
+  {
+    id: 'inv-1',
+    name: 'Bank Central Asia',
+    symbol: 'BBCA.JK',
+    type: 'stock',
+    quantity: 1000,
+    buyPrice: 9100,
+    currentPrice: 9850,
+    date: '2024-01-15',
+  },
+  {
+    id: 'inv-2',
+    name: 'Bitcoin',
+    symbol: 'BTC',
+    type: 'crypto',
+    quantity: 0.05,
+    buyPrice: 42000,
+    currentPrice: 65000,
+    date: '2023-11-20',
+  },
+  {
+    id: 'inv-3',
+    name: 'Local Coffee Shop',
+    symbol: 'LCS',
+    type: 'stake',
+    quantity: 1,
+    buyPrice: 5000,
+    currentPrice: 4800,
+    date: '2024-02-10',
+  },
+  {
+    id: 'inv-4',
+    name: 'Ethereum',
+    symbol: 'ETH',
+    type: 'crypto',
+    quantity: 1.2,
+    buyPrice: 2400,
+    currentPrice: 3200,
+    date: '2024-03-05',
+  },
+];
