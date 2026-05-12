@@ -1,10 +1,9 @@
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { Colors } from '@/constants/theme';
 import { MOCK_TRANSACTIONS } from '@/lib/mock-data';
 import { Transaction } from '@/lib/types';
-import { useColorScheme } from 'react-native';
-import { View, Text, StyleSheet, FlatList, ScrollView, TouchableOpacity } from 'react-native';
-import { Colors } from '@/constants/theme';
+import { FlatList, ScrollView, StyleSheet, Text, TouchableOpacity, useColorScheme, View } from 'react-native';
 
 const totalIncome = MOCK_TRANSACTIONS
   .filter(t => t.type === 'income')
